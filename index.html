@@ -10,28 +10,59 @@
     <header>
         <h1>Kishan</h1>
         <p>Your Title/Occupation</p>
+        <a href="#contact" class="hire-button">Hire Me</a>
     </header>
-
     <main>
-        <h2>About Me</h2>
-        <p>Write a brief description about yourself and your skills.</p>
-
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                Project 1: <a href="#">Learn More</a> (Replace with your project link)
-            </li>
-            <li>
-                Project 2: <a href="#">Learn More</a> (Replace with your project link)
-            </li>
-        </ul>
-
-        <h2>Contact</h2>
-        <p>Email: your_email@example.com</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a compelling bio highlighting your skills and experience.</p>
+            <a href="#skills" class="more-button">See My Skills</a>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Skill 1</li>
+                <li><i class="fas fa-check-circle"></i> Skill 2</li>
+                <li><i class="fas fa-check-circle"></i> Skill 3</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li>
+                    <a href="#">
+                        <img src="project1.jpg" alt="Project 1 Image">
+                        <h3>Project 1 Title</h3>
+                    </a>
+                    <p>Brief description of Project 1.</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="project2.jpg" alt="Project 2 Image">
+                        <h3>Project 2 Title</h3>
+                    </a>
+                    <p>Brief description of Project 2.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your_email@example.com</p>
+            <p>Phone: (optional) Your Phone Number</p>
+            <form action="#">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Kishan</p>
     </footer>
+    <script src="https://kit.fontawesome.com/your_fontawesome_kit_id.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,13 +11,37 @@ header {
     background-color: #eee;
 }
 
-h1,
-h2 {
-    margin-bottom: 10px;
+h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hire-button,
+.more-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more-button {
+    background-color: #333;
 }
 
 main {
     padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 ul {
@@ -29,17 +53,83 @@ li {
     margin-bottom: 10px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+li:nth-child(even) {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-a:hover {
-    text-decoration: underline;
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-list li {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-list li img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #f5f5f5;
+}
+
+/* Add Font Awesome icons */
+.fas {
+    font-size: 18px;
+    margin-right: 5px;
 }
