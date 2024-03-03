@@ -133,3 +133,38 @@ footer {
     font-size: 18px;
     margin-right: 5px;
 }
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #eee;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .project-list li {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
